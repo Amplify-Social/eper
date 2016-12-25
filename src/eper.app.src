@@ -1,7 +1,15 @@
-{application, eper,
- [
-  {description, "Erlang Performance and Debugging Tools"},
+{ application, eper,
+[
+{description, "Erlang Performance and Debugging Tools"},
   {vsn, "0.97.6"},
+  {modules, [atop, bread, bread_server, dogConsumer, dtopConsumer, dtop, dtop_replay, eper.app.src eper, gen_serv, gen_serv.hrl getoptw, loggerConsumer, log.hrl logReader, mtop, ntopConsumer, ntop, prfConsumer, prf_crypto, prfDist, prfDog, prf, prfHost, prfMnesia, prfNet, prfPrc, prfSys, prfTarg, prfTime, prfTrc, redbugConsumer redbug, redbug_eunit, redbug_msc, replay_trc, watchdogConsumer, watchdog, watchdogLogger]},
   {registered, []},
-  {applications, [kernel,stdlib]}
- ]}.
+  {applications, [kernel, stdlib]},
+
+  {maintainers, ["Shailen Karur"]},
+  {licenses, ["BSD"]},
+  {links, [{"Github", "https://github.com/Amplify-Social/eper/"},
+           {"Documentation", "http://ferd.github.io/recon/"}]},
+  {files, ["src/", "script/", "rebar.lock", "README.md", "LICENSE"]}
+]
+}.
